@@ -26,37 +26,56 @@ public class frameHome extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Krisna Putra F\\Downloads\\url.jpg")); // NOI18N
+        jLabel4.setText("jLabel4");
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Krisna Putra F\\Downloads\\url.jpg")); // NOI18N
+        jLabel5.setText("jLabel5");
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Krisna Putra F\\Downloads\\url.png")); // NOI18N
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 0, 0));
         getContentPane().setLayout(null);
+
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Swis721 Blk BT", 0, 14)); // NOI18N
+        jButton1.setText("START!");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(80, 100, 190, 90);
 
         jLabel1.setFont(new java.awt.Font("BinnerD", 1, 36)); // NOI18N
         jLabel1.setText("CONVERTER");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 20, 230, 60);
+        jLabel1.setBounds(60, 30, 280, 44);
 
-        jButton1.setFont(new java.awt.Font("Swis721 Blk BT", 0, 14)); // NOI18N
-        jButton1.setText("START!");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(70, 100, 190, 90);
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(-10, 0, 390, 360);
 
-        jLabel2.setFont(new java.awt.Font("Swis721 Lt BT", 0, 12)); // NOI18N
-        jLabel2.setText("About Us");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(140, 280, 50, 14);
-
-        jLabel3.setFont(new java.awt.Font("Swis721 Lt BT", 0, 12)); // NOI18N
-        jLabel3.setText("Help");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(140, 250, 23, 15);
-
-        setSize(new java.awt.Dimension(340, 394));
+        setSize(new java.awt.Dimension(360, 361));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       new frameInti().setVisible(true);
+       dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -96,7 +115,10 @@ public class frameHome extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

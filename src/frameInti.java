@@ -37,6 +37,7 @@ public class frameInti extends javax.swing.JFrame {
         temp6 = new javax.swing.JComboBox<>();
         inputp = new javax.swing.JTextField();
         temp5 = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -44,6 +45,7 @@ public class frameInti extends javax.swing.JFrame {
         temp4 = new javax.swing.JComboBox<>();
         inputm = new javax.swing.JTextField();
         temp3 = new javax.swing.JComboBox<>();
+        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         temp2 = new javax.swing.JComboBox<>();
         temp1 = new javax.swing.JComboBox<>();
@@ -51,6 +53,7 @@ public class frameInti extends javax.swing.JFrame {
         input = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -74,6 +77,7 @@ public class frameInti extends javax.swing.JFrame {
 
         jTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
 
         jButton5.setText("Process");
@@ -93,6 +97,8 @@ public class frameInti extends javax.swing.JFrame {
         });
         jPanel3.add(jButton6);
         jButton6.setBounds(320, 180, 90, 70);
+
+        outputp.setEditable(false);
         jPanel3.add(outputp);
         outputp.setBounds(30, 190, 110, 50);
 
@@ -102,12 +108,17 @@ public class frameInti extends javax.swing.JFrame {
         jPanel3.add(inputp);
         inputp.setBounds(30, 60, 110, 50);
 
-        temp5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Decimal", "Binary", "Octal", "HexaDecimal" }));
+        temp5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Decimal" }));
         jPanel3.add(temp5);
         temp5.setBounds(30, 10, 110, 50);
 
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Krisna Putra F\\Downloads\\binary-1254499_960_720.png")); // NOI18N
+        jPanel3.add(jLabel5);
+        jLabel5.setBounds(330, -20, 240, 180);
+
         jTabbedPane1.addTab("Programming", jPanel3);
 
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(null);
 
         jButton3.setText("Process");
@@ -127,6 +138,8 @@ public class frameInti extends javax.swing.JFrame {
         });
         jPanel4.add(jButton4);
         jButton4.setBounds(320, 180, 90, 70);
+
+        outputm.setEditable(false);
         jPanel4.add(outputm);
         outputm.setBounds(30, 190, 110, 50);
 
@@ -151,8 +164,14 @@ public class frameInti extends javax.swing.JFrame {
         jPanel4.add(temp3);
         temp3.setBounds(30, 10, 110, 50);
 
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Krisna Putra F\\Downloads\\q.jpg")); // NOI18N
+        jLabel4.setText("jLabel4");
+        jPanel4.add(jLabel4);
+        jLabel4.setBounds(190, 30, 220, 220);
+
         jTabbedPane1.addTab("Money", jPanel4);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
         temp2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Celcius", "Fahrenheit", "Reamur", "Kelvin" }));
@@ -165,6 +184,11 @@ public class frameInti extends javax.swing.JFrame {
         temp2.setBounds(30, 140, 110, 50);
 
         temp1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Celcius", "Fahrenheit", "Reamur", "Kelvin" }));
+        temp1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                temp1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(temp1);
         temp1.setBounds(30, 10, 110, 50);
 
@@ -192,12 +216,22 @@ public class frameInti extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(200, 180, 90, 70);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Krisna Putra F\\Downloads\\Thermometer-clip-art-medical_red_thermometer_1 (1).png")); // NOI18N
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(430, -60, 50, 230);
+
         jTabbedPane1.addTab("Temperature", jPanel1);
 
         getContentPane().add(jTabbedPane1);
         jTabbedPane1.setBounds(0, 80, 490, 310);
 
         jButton7.setText("Home");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton7);
         jButton7.setBounds(390, 10, 80, 23);
 
@@ -412,11 +446,6 @@ public class frameInti extends javax.swing.JFrame {
         outputm.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- inputm.setText("");
-        outputm.setText("");        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
  inputm.setText("");
         outputm.setText("");        // TODO add your handling code here:
@@ -425,10 +454,9 @@ public class frameInti extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         String atasm =temp5.getSelectedItem().toString();
         String bawahm=temp6.getSelectedItem().toString();
-        int Inputp = Integer.parseInt(inputp.getText()) ;
-        
+        int Inputp = Integer.parseInt(inputp.getText()) ;        
         int Hasilp; 
-
+//decimal//
         if (temp5.getSelectedItem()=="Decimal" && temp6.getSelectedItem()=="Decimal"){
         Hasilp=Inputp;
         outputp.setText(String.valueOf(Hasilp));}
@@ -447,7 +475,25 @@ public class frameInti extends javax.swing.JFrame {
            int Hasil=Integer.parseInt(nampung);
            String Hexa = Integer.toHexString(Hasil);
            outputp.setText(String.valueOf(Hexa));}
+//end decimal//
+    
+    
     }//GEN-LAST:event_jButton5ActionPerformed
+
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+new frameHome().setVisible(true);
+       dispose();                // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void temp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_temp1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_temp1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        inputm.setText("");
+        outputm.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -496,6 +542,9 @@ public class frameInti extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
